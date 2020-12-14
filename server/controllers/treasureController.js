@@ -30,7 +30,7 @@ module.exports = {
     },
 
     getAllTreasure: async (req, res) => {
-        const result = await req.app.get('db').get_all_treasure()
-        res.status(200).send(result)
+        const result = await req.app.get('db').get_all_treasure();
+        return res.status(200).send(result)
     }
 }
